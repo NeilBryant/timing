@@ -1,7 +1,8 @@
 /**
  * Timing - Presents visually the timing of different
- * page loading phases by a browser. (https://github.com/kaaes/timing)
+ * page loading phases by a browser. (https://github.com/NeilBryant/timing)
  * Copyright (c) 2011-2013, Kasia Drzyzga. (FreeBSD License)
+ * Forked 2015, Neil Bryant
  */
 function __Profiler() {
   this.totalTime = 0;
@@ -176,7 +177,7 @@ __Profiler.prototype._createCloseButton = function() {
  */
 __Profiler.prototype._createInfoLink = function() {
   var a = document.createElement('a');
-  a.href = 'http://kaaes.github.com/timing/info.html';
+  a.href = 'http://neilbryant.github.io/timing/';
   a.target = '_blank';
   a.innerHTML = 'What does that mean?';
   a.style.cssText = this.cssReset + this.infoLinkCss;
